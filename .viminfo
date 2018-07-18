@@ -10,15 +10,24 @@
 
 # hlsearch on (H) or off (h):
 ~H
+# Last Substitute String:
+$
+
 # Command Line History (newest to oldest):
 :wq
-|2,0,1525333625,,"wq"
+|2,0,1532408395,,"wq"
 :w
-|2,0,1525333403,,"w"
+|2,0,1531985684,,"w"
 :q
-|2,0,1525331004,,"q"
+|2,0,1529977158,,"q"
+:colorscheme industry
+|2,0,1525508163,,"colorscheme industry"
+:color
+|2,0,1525507828,,"color"
+:WQ
+|2,0,1525389924,,"WQ"
 :q!
-|2,0,1525330507,,"q!"
+|2,0,1525386781,,"q!"
 :w\
 |2,0,1525324665,,"w\\"
 :!q
@@ -27,6 +36,8 @@
 |2,0,1524617079,,"!echo $HOME"
 
 # Search String History (newest to oldest):
+? @$
+|2,1,1529974040,,"@$"
 
 # Expression History (newest to oldest):
 
@@ -36,268 +47,580 @@
 
 # Registers:
 "0	LINE	0
-	  tester.push_back();
-|3,0,0,1,1,0,1525328468,"  tester.push_back();"
+	  q.front();
+	  q.dequeue();
+|3,0,0,1,2,0,1531985652,"  q.front();","  q.dequeue();"
 ""1	LINE	0
-	      dups.push_back(second);
-|3,1,1,1,1,0,1525332966,"      dups.push_back(second);"
+	  cout << 
+|3,1,1,1,1,0,1531985910,"  cout << "
 "2	LINE	0
-	      dups.push_back(first);
-|3,0,2,1,1,0,1525332965,"      dups.push_back(first);"
+	  }
+|3,0,2,1,1,0,1531985557,"  }"
 "3	LINE	0
-	
-|3,0,3,1,1,0,1525332873,""
+	    q.dequeue();
+|3,0,3,1,1,0,1531985557,"    q.dequeue();"
 "4	LINE	0
-	
-|3,0,4,1,1,0,1525332872,""
+	    std::cout << q.front() << std::endl;
+|3,0,4,1,1,0,1531985557,"    std::cout << q.front() << std::endl;"
 "5	LINE	0
-	    cout << "currentValue is: " << currentValue << endl;
-|3,0,5,1,1,0,1525332871,"    cout << \"currentValue is: \" << currentValue << endl;"
+	  {
+|3,0,5,1,1,0,1531985556,"  {"
 "6	LINE	0
-	      cout << "inserting: " << valToStore << endl;
-|3,0,6,1,1,0,1525332867,"      cout << \"inserting: \" << valToStore << endl;"
+	  for( int i = 0; i < 50; i++ )
+|3,0,6,1,1,0,1531985556,"  for( int i = 0; i < 50; i++ )"
 "7	LINE	0
-	  //cout << toReturn.size() << endl;
-|3,0,7,1,1,0,1525332863,"  //cout << toReturn.size() << endl;"
+	
+|3,0,7,1,1,0,1531985555,""
 "8	LINE	0
-	      //cout << " second is: " << otherValue << endl;
-|3,0,8,1,1,0,1525332862,"      //cout << \" second is: \" << otherValue << endl;"
+	  }
+|3,0,8,1,1,0,1531985555,"  }"
 "9	LINE	0
-	      //cout << "first is: " << currentValue;
-|3,0,9,1,1,0,1525332861,"      //cout << \"first is: \" << currentValue;"
+	    q.enqueue(i);
+|3,0,9,1,1,0,1531985554,"    q.enqueue(i);"
 "-	CHAR	0
-	 
-|3,0,36,0,1,0,1524617455," "
+	e
+|3,0,36,0,1,0,1529974085,"e"
 
 # File marks:
-'0  60  13  ~/project/code/arrays/allPairInt.cpp
-|4,48,60,13,1525333625,"~/project/code/arrays/allPairInt.cpp"
-'1  53  23  ~/project/code/arrays/allPairInt.cpp
-|4,49,53,23,1525333506,"~/project/code/arrays/allPairInt.cpp"
-'2  53  23  ~/project/code/arrays/allPairInt.cpp
-|4,50,53,23,1525333506,"~/project/code/arrays/allPairInt.cpp"
-'3  60  21  ~/project/code/arrays/allPairInt.cpp
-|4,51,60,21,1525333404,"~/project/code/arrays/allPairInt.cpp"
-'4  60  21  ~/project/code/arrays/allPairInt.cpp
-|4,52,60,21,1525333404,"~/project/code/arrays/allPairInt.cpp"
-'5  60  21  ~/project/code/arrays/allPairInt.cpp
-|4,53,60,21,1525333404,"~/project/code/arrays/allPairInt.cpp"
-'6  26  6  ~/project/code/arrays/allPairInt.cpp
-|4,54,26,6,1525333287,"~/project/code/arrays/allPairInt.cpp"
-'7  26  6  ~/project/code/arrays/allPairInt.cpp
-|4,55,26,6,1525333287,"~/project/code/arrays/allPairInt.cpp"
-'8  26  6  ~/project/code/arrays/allPairInt.cpp
-|4,56,26,6,1525333287,"~/project/code/arrays/allPairInt.cpp"
-'9  26  6  ~/project/code/arrays/allPairInt.cpp
-|4,57,26,6,1525333287,"~/project/code/arrays/allPairInt.cpp"
+'0  5  0  ~/project/code/bst/bst.cpp
+|4,48,5,0,1532408395,"~/project/code/bst/bst.cpp"
+'1  24  0  ~/.vimrc
+|4,49,24,0,1532408308,"~/.vimrc"
+'2  123  0  ~/project/code/queue/queue.cpp
+|4,50,123,0,1532408191,"~/project/code/queue/queue.cpp"
+'3  73  0  ~/project/code/queue/queue.cpp
+|4,51,73,0,1531985942,"~/project/code/queue/queue.cpp"
+'4  73  0  ~/project/code/queue/queue.cpp
+|4,52,73,0,1531985942,"~/project/code/queue/queue.cpp"
+'5  119  26  ~/project/code/queue/queue.cpp
+|4,53,119,26,1531985754,"~/project/code/queue/queue.cpp"
+'6  119  26  ~/project/code/queue/queue.cpp
+|4,54,119,26,1531985754,"~/project/code/queue/queue.cpp"
+'7  119  26  ~/project/code/queue/queue.cpp
+|4,55,119,26,1531985754,"~/project/code/queue/queue.cpp"
+'8  119  26  ~/project/code/queue/queue.cpp
+|4,56,119,26,1531985754,"~/project/code/queue/queue.cpp"
+'9  103  14  ~/project/code/queue/queue.cpp
+|4,57,103,14,1531985516,"~/project/code/queue/queue.cpp"
 
 # Jumplist (newest first):
--'  60  13  ~/project/code/arrays/allPairInt.cpp
-|4,39,60,13,1525333625,"~/project/code/arrays/allPairInt.cpp"
--'  53  4  ~/project/code/arrays/allPairInt.cpp
-|4,39,53,4,1525333515,"~/project/code/arrays/allPairInt.cpp"
--'  53  23  ~/project/code/arrays/allPairInt.cpp
-|4,39,53,23,1525333506,"~/project/code/arrays/allPairInt.cpp"
--'  60  8  ~/project/code/arrays/allPairInt.cpp
-|4,39,60,8,1525333423,"~/project/code/arrays/allPairInt.cpp"
--'  60  21  ~/project/code/arrays/allPairInt.cpp
-|4,39,60,21,1525333404,"~/project/code/arrays/allPairInt.cpp"
--'  26  4  ~/project/code/arrays/allPairInt.cpp
-|4,39,26,4,1525333294,"~/project/code/arrays/allPairInt.cpp"
--'  26  4  ~/project/code/arrays/allPairInt.cpp
-|4,39,26,4,1525333294,"~/project/code/arrays/allPairInt.cpp"
--'  26  4  ~/project/code/arrays/allPairInt.cpp
-|4,39,26,4,1525333294,"~/project/code/arrays/allPairInt.cpp"
--'  26  6  ~/project/code/arrays/allPairInt.cpp
-|4,39,26,6,1525333287,"~/project/code/arrays/allPairInt.cpp"
--'  60  8  ~/project/code/arrays/allPairInt.cpp
-|4,39,60,8,1525333276,"~/project/code/arrays/allPairInt.cpp"
--'  60  45  ~/project/code/arrays/allPairInt.cpp
-|4,39,60,45,1525333272,"~/project/code/arrays/allPairInt.cpp"
--'  55  3  ~/project/code/arrays/allPairInt.cpp
-|4,39,55,3,1525333055,"~/project/code/arrays/allPairInt.cpp"
--'  55  3  ~/project/code/arrays/allPairInt.cpp
-|4,39,55,3,1525333055,"~/project/code/arrays/allPairInt.cpp"
--'  55  3  ~/project/code/arrays/allPairInt.cpp
-|4,39,55,3,1525333055,"~/project/code/arrays/allPairInt.cpp"
--'  55  3  ~/project/code/arrays/allPairInt.cpp
-|4,39,55,3,1525333055,"~/project/code/arrays/allPairInt.cpp"
--'  55  3  ~/project/code/arrays/allPairInt.cpp
-|4,39,55,3,1525333055,"~/project/code/arrays/allPairInt.cpp"
--'  53  3  ~/project/code/arrays/allPairInt.cpp
-|4,39,53,3,1525333019,"~/project/code/arrays/allPairInt.cpp"
--'  53  3  ~/project/code/arrays/allPairInt.cpp
-|4,39,53,3,1525333019,"~/project/code/arrays/allPairInt.cpp"
--'  53  3  ~/project/code/arrays/allPairInt.cpp
-|4,39,53,3,1525333019,"~/project/code/arrays/allPairInt.cpp"
--'  49  0  ~/project/code/arrays/allPairInt.cpp
-|4,39,49,0,1525332959,"~/project/code/arrays/allPairInt.cpp"
--'  49  0  ~/project/code/arrays/allPairInt.cpp
-|4,39,49,0,1525332959,"~/project/code/arrays/allPairInt.cpp"
--'  49  0  ~/project/code/arrays/allPairInt.cpp
-|4,39,49,0,1525332959,"~/project/code/arrays/allPairInt.cpp"
--'  49  0  ~/project/code/arrays/allPairInt.cpp
-|4,39,49,0,1525332959,"~/project/code/arrays/allPairInt.cpp"
--'  49  0  ~/project/code/arrays/allPairInt.cpp
-|4,39,49,0,1525332959,"~/project/code/arrays/allPairInt.cpp"
--'  49  0  ~/project/code/arrays/allPairInt.cpp
-|4,39,49,0,1525332959,"~/project/code/arrays/allPairInt.cpp"
--'  51  0  ~/project/code/arrays/allPairInt.cpp
-|4,39,51,0,1525332936,"~/project/code/arrays/allPairInt.cpp"
--'  51  0  ~/project/code/arrays/allPairInt.cpp
-|4,39,51,0,1525332936,"~/project/code/arrays/allPairInt.cpp"
--'  51  0  ~/project/code/arrays/allPairInt.cpp
-|4,39,51,0,1525332936,"~/project/code/arrays/allPairInt.cpp"
--'  51  0  ~/project/code/arrays/allPairInt.cpp
-|4,39,51,0,1525332936,"~/project/code/arrays/allPairInt.cpp"
--'  51  0  ~/project/code/arrays/allPairInt.cpp
-|4,39,51,0,1525332936,"~/project/code/arrays/allPairInt.cpp"
--'  51  0  ~/project/code/arrays/allPairInt.cpp
-|4,39,51,0,1525332936,"~/project/code/arrays/allPairInt.cpp"
--'  68  2  ~/project/code/arrays/allPairInt.cpp
-|4,39,68,2,1525332850,"~/project/code/arrays/allPairInt.cpp"
--'  66  2  ~/project/code/arrays/allPairInt.cpp
-|4,39,66,2,1525332850,"~/project/code/arrays/allPairInt.cpp"
--'  56  2  ~/project/code/arrays/allPairInt.cpp
-|4,39,56,2,1525332850,"~/project/code/arrays/allPairInt.cpp"
--'  54  2  ~/project/code/arrays/allPairInt.cpp
-|4,39,54,2,1525332850,"~/project/code/arrays/allPairInt.cpp"
--'  68  2  ~/project/code/arrays/allPairInt.cpp
-|4,39,68,2,1525332850,"~/project/code/arrays/allPairInt.cpp"
--'  66  2  ~/project/code/arrays/allPairInt.cpp
-|4,39,66,2,1525332850,"~/project/code/arrays/allPairInt.cpp"
--'  56  2  ~/project/code/arrays/allPairInt.cpp
-|4,39,56,2,1525332850,"~/project/code/arrays/allPairInt.cpp"
--'  54  2  ~/project/code/arrays/allPairInt.cpp
-|4,39,54,2,1525332850,"~/project/code/arrays/allPairInt.cpp"
--'  68  2  ~/project/code/arrays/allPairInt.cpp
-|4,39,68,2,1525332850,"~/project/code/arrays/allPairInt.cpp"
--'  66  2  ~/project/code/arrays/allPairInt.cpp
-|4,39,66,2,1525332850,"~/project/code/arrays/allPairInt.cpp"
--'  56  2  ~/project/code/arrays/allPairInt.cpp
-|4,39,56,2,1525332850,"~/project/code/arrays/allPairInt.cpp"
--'  54  2  ~/project/code/arrays/allPairInt.cpp
-|4,39,54,2,1525332850,"~/project/code/arrays/allPairInt.cpp"
--'  68  2  ~/project/code/arrays/allPairInt.cpp
-|4,39,68,2,1525332850,"~/project/code/arrays/allPairInt.cpp"
--'  66  2  ~/project/code/arrays/allPairInt.cpp
-|4,39,66,2,1525332850,"~/project/code/arrays/allPairInt.cpp"
--'  56  2  ~/project/code/arrays/allPairInt.cpp
-|4,39,56,2,1525332850,"~/project/code/arrays/allPairInt.cpp"
--'  54  2  ~/project/code/arrays/allPairInt.cpp
-|4,39,54,2,1525332850,"~/project/code/arrays/allPairInt.cpp"
--'  68  2  ~/project/code/arrays/allPairInt.cpp
-|4,39,68,2,1525332850,"~/project/code/arrays/allPairInt.cpp"
--'  66  2  ~/project/code/arrays/allPairInt.cpp
-|4,39,66,2,1525332850,"~/project/code/arrays/allPairInt.cpp"
--'  56  2  ~/project/code/arrays/allPairInt.cpp
-|4,39,56,2,1525332850,"~/project/code/arrays/allPairInt.cpp"
--'  54  2  ~/project/code/arrays/allPairInt.cpp
-|4,39,54,2,1525332850,"~/project/code/arrays/allPairInt.cpp"
--'  54  2  ~/project/code/arrays/allPairInt.cpp
-|4,39,54,2,1525332832,"~/project/code/arrays/allPairInt.cpp"
--'  42  6  ~/project/code/arrays/allPairInt.cpp
-|4,39,42,6,1525332824,"~/project/code/arrays/allPairInt.cpp"
--'  46  6  ~/project/code/arrays/allPairInt.cpp
-|4,39,46,6,1525332824,"~/project/code/arrays/allPairInt.cpp"
--'  44  6  ~/project/code/arrays/allPairInt.cpp
-|4,39,44,6,1525332824,"~/project/code/arrays/allPairInt.cpp"
--'  48  6  ~/project/code/arrays/allPairInt.cpp
-|4,39,48,6,1525332824,"~/project/code/arrays/allPairInt.cpp"
--'  42  6  ~/project/code/arrays/allPairInt.cpp
-|4,39,42,6,1525332824,"~/project/code/arrays/allPairInt.cpp"
--'  46  6  ~/project/code/arrays/allPairInt.cpp
-|4,39,46,6,1525332824,"~/project/code/arrays/allPairInt.cpp"
--'  44  6  ~/project/code/arrays/allPairInt.cpp
-|4,39,44,6,1525332824,"~/project/code/arrays/allPairInt.cpp"
--'  48  6  ~/project/code/arrays/allPairInt.cpp
-|4,39,48,6,1525332824,"~/project/code/arrays/allPairInt.cpp"
--'  42  6  ~/project/code/arrays/allPairInt.cpp
-|4,39,42,6,1525332824,"~/project/code/arrays/allPairInt.cpp"
--'  46  6  ~/project/code/arrays/allPairInt.cpp
-|4,39,46,6,1525332824,"~/project/code/arrays/allPairInt.cpp"
--'  44  6  ~/project/code/arrays/allPairInt.cpp
-|4,39,44,6,1525332824,"~/project/code/arrays/allPairInt.cpp"
--'  48  6  ~/project/code/arrays/allPairInt.cpp
-|4,39,48,6,1525332824,"~/project/code/arrays/allPairInt.cpp"
--'  42  6  ~/project/code/arrays/allPairInt.cpp
-|4,39,42,6,1525332824,"~/project/code/arrays/allPairInt.cpp"
--'  46  6  ~/project/code/arrays/allPairInt.cpp
-|4,39,46,6,1525332824,"~/project/code/arrays/allPairInt.cpp"
--'  44  6  ~/project/code/arrays/allPairInt.cpp
-|4,39,44,6,1525332824,"~/project/code/arrays/allPairInt.cpp"
--'  48  6  ~/project/code/arrays/allPairInt.cpp
-|4,39,48,6,1525332824,"~/project/code/arrays/allPairInt.cpp"
--'  42  6  ~/project/code/arrays/allPairInt.cpp
-|4,39,42,6,1525332824,"~/project/code/arrays/allPairInt.cpp"
--'  46  6  ~/project/code/arrays/allPairInt.cpp
-|4,39,46,6,1525332824,"~/project/code/arrays/allPairInt.cpp"
--'  44  6  ~/project/code/arrays/allPairInt.cpp
-|4,39,44,6,1525332824,"~/project/code/arrays/allPairInt.cpp"
--'  48  6  ~/project/code/arrays/allPairInt.cpp
-|4,39,48,6,1525332824,"~/project/code/arrays/allPairInt.cpp"
--'  42  6  ~/project/code/arrays/allPairInt.cpp
-|4,39,42,6,1525332824,"~/project/code/arrays/allPairInt.cpp"
--'  46  6  ~/project/code/arrays/allPairInt.cpp
-|4,39,46,6,1525332824,"~/project/code/arrays/allPairInt.cpp"
--'  44  6  ~/project/code/arrays/allPairInt.cpp
-|4,39,44,6,1525332824,"~/project/code/arrays/allPairInt.cpp"
--'  48  6  ~/project/code/arrays/allPairInt.cpp
-|4,39,48,6,1525332824,"~/project/code/arrays/allPairInt.cpp"
--'  48  6  ~/project/code/arrays/allPairInt.cpp
-|4,39,48,6,1525332820,"~/project/code/arrays/allPairInt.cpp"
--'  39  0  ~/project/code/arrays/allPairInt.cpp
-|4,39,39,0,1525332813,"~/project/code/arrays/allPairInt.cpp"
--'  43  0  ~/project/code/arrays/allPairInt.cpp
-|4,39,43,0,1525332813,"~/project/code/arrays/allPairInt.cpp"
--'  39  0  ~/project/code/arrays/allPairInt.cpp
-|4,39,39,0,1525332813,"~/project/code/arrays/allPairInt.cpp"
--'  43  0  ~/project/code/arrays/allPairInt.cpp
-|4,39,43,0,1525332813,"~/project/code/arrays/allPairInt.cpp"
--'  39  0  ~/project/code/arrays/allPairInt.cpp
-|4,39,39,0,1525332813,"~/project/code/arrays/allPairInt.cpp"
--'  43  0  ~/project/code/arrays/allPairInt.cpp
-|4,39,43,0,1525332813,"~/project/code/arrays/allPairInt.cpp"
--'  39  0  ~/project/code/arrays/allPairInt.cpp
-|4,39,39,0,1525332813,"~/project/code/arrays/allPairInt.cpp"
--'  43  0  ~/project/code/arrays/allPairInt.cpp
-|4,39,43,0,1525332813,"~/project/code/arrays/allPairInt.cpp"
--'  39  0  ~/project/code/arrays/allPairInt.cpp
-|4,39,39,0,1525332813,"~/project/code/arrays/allPairInt.cpp"
--'  43  0  ~/project/code/arrays/allPairInt.cpp
-|4,39,43,0,1525332813,"~/project/code/arrays/allPairInt.cpp"
--'  39  0  ~/project/code/arrays/allPairInt.cpp
-|4,39,39,0,1525332813,"~/project/code/arrays/allPairInt.cpp"
--'  39  0  ~/project/code/arrays/allPairInt.cpp
-|4,39,39,0,1525332813,"~/project/code/arrays/allPairInt.cpp"
--'  43  0  ~/project/code/arrays/allPairInt.cpp
-|4,39,43,0,1525332813,"~/project/code/arrays/allPairInt.cpp"
--'  43  0  ~/project/code/arrays/allPairInt.cpp
-|4,39,43,0,1525332813,"~/project/code/arrays/allPairInt.cpp"
--'  43  0  ~/project/code/arrays/allPairInt.cpp
-|4,39,43,0,1525332810,"~/project/code/arrays/allPairInt.cpp"
--'  40  8  ~/project/code/arrays/allPairInt.cpp
-|4,39,40,8,1525332800,"~/project/code/arrays/allPairInt.cpp"
--'  40  8  ~/project/code/arrays/allPairInt.cpp
-|4,39,40,8,1525332800,"~/project/code/arrays/allPairInt.cpp"
--'  40  8  ~/project/code/arrays/allPairInt.cpp
-|4,39,40,8,1525332800,"~/project/code/arrays/allPairInt.cpp"
--'  40  8  ~/project/code/arrays/allPairInt.cpp
-|4,39,40,8,1525332800,"~/project/code/arrays/allPairInt.cpp"
--'  40  8  ~/project/code/arrays/allPairInt.cpp
-|4,39,40,8,1525332800,"~/project/code/arrays/allPairInt.cpp"
--'  40  8  ~/project/code/arrays/allPairInt.cpp
-|4,39,40,8,1525332800,"~/project/code/arrays/allPairInt.cpp"
--'  40  8  ~/project/code/arrays/allPairInt.cpp
-|4,39,40,8,1525332800,"~/project/code/arrays/allPairInt.cpp"
--'  44  8  ~/project/code/arrays/allPairInt.cpp
-|4,39,44,8,1525332800,"~/project/code/arrays/allPairInt.cpp"
+-'  5  0  ~/project/code/bst/bst.cpp
+|4,39,5,0,1532408395,"~/project/code/bst/bst.cpp"
+-'  1  0  ~/project/code/bst/bst.cpp
+|4,39,1,0,1532408383,"~/project/code/bst/bst.cpp"
+-'  24  0  ~/.vimrc
+|4,39,24,0,1532408308,"~/.vimrc"
+-'  24  0  ~/.vimrc
+|4,39,24,0,1532408308,"~/.vimrc"
+-'  8  0  ~/.vimrc
+|4,39,8,0,1532408288,"~/.vimrc"
+-'  8  0  ~/.vimrc
+|4,39,8,0,1532408288,"~/.vimrc"
+-'  123  0  ~/project/code/queue/queue.cpp
+|4,39,123,0,1532408191,"~/project/code/queue/queue.cpp"
+-'  123  0  ~/project/code/queue/queue.cpp
+|4,39,123,0,1532408191,"~/project/code/queue/queue.cpp"
+-'  123  0  ~/project/code/queue/queue.cpp
+|4,39,123,0,1532408191,"~/project/code/queue/queue.cpp"
+-'  123  0  ~/project/code/queue/queue.cpp
+|4,39,123,0,1532408191,"~/project/code/queue/queue.cpp"
+-'  73  6  ~/project/code/queue/queue.cpp
+|4,39,73,6,1532408159,"~/project/code/queue/queue.cpp"
+-'  73  6  ~/project/code/queue/queue.cpp
+|4,39,73,6,1532408159,"~/project/code/queue/queue.cpp"
+-'  73  6  ~/project/code/queue/queue.cpp
+|4,39,73,6,1532408159,"~/project/code/queue/queue.cpp"
+-'  73  6  ~/project/code/queue/queue.cpp
+|4,39,73,6,1532408159,"~/project/code/queue/queue.cpp"
+-'  73  0  ~/project/code/queue/queue.cpp
+|4,39,73,0,1531985942,"~/project/code/queue/queue.cpp"
+-'  73  0  ~/project/code/queue/queue.cpp
+|4,39,73,0,1531985942,"~/project/code/queue/queue.cpp"
+-'  73  0  ~/project/code/queue/queue.cpp
+|4,39,73,0,1531985942,"~/project/code/queue/queue.cpp"
+-'  73  0  ~/project/code/queue/queue.cpp
+|4,39,73,0,1531985942,"~/project/code/queue/queue.cpp"
+-'  119  2  ~/project/code/queue/queue.cpp
+|4,39,119,2,1531985773,"~/project/code/queue/queue.cpp"
+-'  119  2  ~/project/code/queue/queue.cpp
+|4,39,119,2,1531985773,"~/project/code/queue/queue.cpp"
+-'  119  2  ~/project/code/queue/queue.cpp
+|4,39,119,2,1531985773,"~/project/code/queue/queue.cpp"
+-'  119  2  ~/project/code/queue/queue.cpp
+|4,39,119,2,1531985773,"~/project/code/queue/queue.cpp"
+-'  119  2  ~/project/code/queue/queue.cpp
+|4,39,119,2,1531985773,"~/project/code/queue/queue.cpp"
+-'  119  2  ~/project/code/queue/queue.cpp
+|4,39,119,2,1531985773,"~/project/code/queue/queue.cpp"
+-'  119  2  ~/project/code/queue/queue.cpp
+|4,39,119,2,1531985773,"~/project/code/queue/queue.cpp"
+-'  119  2  ~/project/code/queue/queue.cpp
+|4,39,119,2,1531985773,"~/project/code/queue/queue.cpp"
+-'  119  26  ~/project/code/queue/queue.cpp
+|4,39,119,26,1531985754,"~/project/code/queue/queue.cpp"
+-'  119  26  ~/project/code/queue/queue.cpp
+|4,39,119,26,1531985754,"~/project/code/queue/queue.cpp"
+-'  119  26  ~/project/code/queue/queue.cpp
+|4,39,119,26,1531985754,"~/project/code/queue/queue.cpp"
+-'  119  26  ~/project/code/queue/queue.cpp
+|4,39,119,26,1531985754,"~/project/code/queue/queue.cpp"
+-'  103  4  ~/project/code/queue/queue.cpp
+|4,39,103,4,1531985535,"~/project/code/queue/queue.cpp"
+-'  103  4  ~/project/code/queue/queue.cpp
+|4,39,103,4,1531985535,"~/project/code/queue/queue.cpp"
+-'  103  4  ~/project/code/queue/queue.cpp
+|4,39,103,4,1531985535,"~/project/code/queue/queue.cpp"
+-'  103  4  ~/project/code/queue/queue.cpp
+|4,39,103,4,1531985535,"~/project/code/queue/queue.cpp"
+-'  103  4  ~/project/code/queue/queue.cpp
+|4,39,103,4,1531985535,"~/project/code/queue/queue.cpp"
+-'  103  4  ~/project/code/queue/queue.cpp
+|4,39,103,4,1531985535,"~/project/code/queue/queue.cpp"
+-'  103  4  ~/project/code/queue/queue.cpp
+|4,39,103,4,1531985535,"~/project/code/queue/queue.cpp"
+-'  103  4  ~/project/code/queue/queue.cpp
+|4,39,103,4,1531985535,"~/project/code/queue/queue.cpp"
+-'  103  4  ~/project/code/queue/queue.cpp
+|4,39,103,4,1531985535,"~/project/code/queue/queue.cpp"
+-'  103  4  ~/project/code/queue/queue.cpp
+|4,39,103,4,1531985535,"~/project/code/queue/queue.cpp"
+-'  103  4  ~/project/code/queue/queue.cpp
+|4,39,103,4,1531985535,"~/project/code/queue/queue.cpp"
+-'  103  4  ~/project/code/queue/queue.cpp
+|4,39,103,4,1531985535,"~/project/code/queue/queue.cpp"
+-'  111  14  ~/project/code/queue/queue.cpp
+|4,39,111,14,1531985516,"~/project/code/queue/queue.cpp"
+-'  111  14  ~/project/code/queue/queue.cpp
+|4,39,111,14,1531985516,"~/project/code/queue/queue.cpp"
+-'  111  14  ~/project/code/queue/queue.cpp
+|4,39,111,14,1531985516,"~/project/code/queue/queue.cpp"
+-'  111  14  ~/project/code/queue/queue.cpp
+|4,39,111,14,1531985516,"~/project/code/queue/queue.cpp"
+-'  111  14  ~/project/code/queue/queue.cpp
+|4,39,111,14,1531985516,"~/project/code/queue/queue.cpp"
+-'  111  14  ~/project/code/queue/queue.cpp
+|4,39,111,14,1531985516,"~/project/code/queue/queue.cpp"
+-'  111  14  ~/project/code/queue/queue.cpp
+|4,39,111,14,1531985516,"~/project/code/queue/queue.cpp"
+-'  111  14  ~/project/code/queue/queue.cpp
+|4,39,111,14,1531985516,"~/project/code/queue/queue.cpp"
+-'  111  14  ~/project/code/queue/queue.cpp
+|4,39,111,14,1531985516,"~/project/code/queue/queue.cpp"
+-'  111  14  ~/project/code/queue/queue.cpp
+|4,39,111,14,1531985516,"~/project/code/queue/queue.cpp"
+-'  111  14  ~/project/code/queue/queue.cpp
+|4,39,111,14,1531985516,"~/project/code/queue/queue.cpp"
+-'  111  14  ~/project/code/queue/queue.cpp
+|4,39,111,14,1531985516,"~/project/code/queue/queue.cpp"
+-'  111  10  ~/project/code/queue/queue.cpp
+|4,39,111,10,1531985479,"~/project/code/queue/queue.cpp"
+-'  111  10  ~/project/code/queue/queue.cpp
+|4,39,111,10,1531985479,"~/project/code/queue/queue.cpp"
+-'  111  10  ~/project/code/queue/queue.cpp
+|4,39,111,10,1531985479,"~/project/code/queue/queue.cpp"
+-'  111  10  ~/project/code/queue/queue.cpp
+|4,39,111,10,1531985479,"~/project/code/queue/queue.cpp"
+-'  91  4  ~/project/code/queue/queue.cpp
+|4,39,91,4,1531985455,"~/project/code/queue/queue.cpp"
+-'  91  4  ~/project/code/queue/queue.cpp
+|4,39,91,4,1531985455,"~/project/code/queue/queue.cpp"
+-'  91  4  ~/project/code/queue/queue.cpp
+|4,39,91,4,1531985455,"~/project/code/queue/queue.cpp"
+-'  91  4  ~/project/code/queue/queue.cpp
+|4,39,91,4,1531985455,"~/project/code/queue/queue.cpp"
+-'  91  4  ~/project/code/queue/queue.cpp
+|4,39,91,4,1531985455,"~/project/code/queue/queue.cpp"
+-'  91  4  ~/project/code/queue/queue.cpp
+|4,39,91,4,1531985455,"~/project/code/queue/queue.cpp"
+-'  91  4  ~/project/code/queue/queue.cpp
+|4,39,91,4,1531985455,"~/project/code/queue/queue.cpp"
+-'  91  4  ~/project/code/queue/queue.cpp
+|4,39,91,4,1531985455,"~/project/code/queue/queue.cpp"
+-'  91  4  ~/project/code/queue/queue.cpp
+|4,39,91,4,1531985455,"~/project/code/queue/queue.cpp"
+-'  91  4  ~/project/code/queue/queue.cpp
+|4,39,91,4,1531985455,"~/project/code/queue/queue.cpp"
+-'  91  4  ~/project/code/queue/queue.cpp
+|4,39,91,4,1531985455,"~/project/code/queue/queue.cpp"
+-'  91  4  ~/project/code/queue/queue.cpp
+|4,39,91,4,1531985455,"~/project/code/queue/queue.cpp"
+-'  91  4  ~/project/code/queue/queue.cpp
+|4,39,91,4,1531985455,"~/project/code/queue/queue.cpp"
+-'  91  4  ~/project/code/queue/queue.cpp
+|4,39,91,4,1531985455,"~/project/code/queue/queue.cpp"
+-'  91  4  ~/project/code/queue/queue.cpp
+|4,39,91,4,1531985455,"~/project/code/queue/queue.cpp"
+-'  91  4  ~/project/code/queue/queue.cpp
+|4,39,91,4,1531985455,"~/project/code/queue/queue.cpp"
+-'  91  4  ~/project/code/queue/queue.cpp
+|4,39,91,4,1531985455,"~/project/code/queue/queue.cpp"
+-'  91  4  ~/project/code/queue/queue.cpp
+|4,39,91,4,1531985455,"~/project/code/queue/queue.cpp"
+-'  91  4  ~/project/code/queue/queue.cpp
+|4,39,91,4,1531985455,"~/project/code/queue/queue.cpp"
+-'  91  4  ~/project/code/queue/queue.cpp
+|4,39,91,4,1531985455,"~/project/code/queue/queue.cpp"
+-'  91  15  ~/project/code/queue/queue.cpp
+|4,39,91,15,1531985447,"~/project/code/queue/queue.cpp"
+-'  91  15  ~/project/code/queue/queue.cpp
+|4,39,91,15,1531985447,"~/project/code/queue/queue.cpp"
+-'  91  15  ~/project/code/queue/queue.cpp
+|4,39,91,15,1531985447,"~/project/code/queue/queue.cpp"
+-'  91  15  ~/project/code/queue/queue.cpp
+|4,39,91,15,1531985447,"~/project/code/queue/queue.cpp"
+-'  86  2  ~/project/code/queue/queue.cpp
+|4,39,86,2,1531985431,"~/project/code/queue/queue.cpp"
+-'  86  2  ~/project/code/queue/queue.cpp
+|4,39,86,2,1531985431,"~/project/code/queue/queue.cpp"
+-'  86  2  ~/project/code/queue/queue.cpp
+|4,39,86,2,1531985431,"~/project/code/queue/queue.cpp"
+-'  86  2  ~/project/code/queue/queue.cpp
+|4,39,86,2,1531985431,"~/project/code/queue/queue.cpp"
+-'  86  2  ~/project/code/queue/queue.cpp
+|4,39,86,2,1531985431,"~/project/code/queue/queue.cpp"
+-'  86  2  ~/project/code/queue/queue.cpp
+|4,39,86,2,1531985431,"~/project/code/queue/queue.cpp"
+-'  86  2  ~/project/code/queue/queue.cpp
+|4,39,86,2,1531985431,"~/project/code/queue/queue.cpp"
+-'  86  2  ~/project/code/queue/queue.cpp
+|4,39,86,2,1531985431,"~/project/code/queue/queue.cpp"
+-'  86  2  ~/project/code/queue/queue.cpp
+|4,39,86,2,1531985431,"~/project/code/queue/queue.cpp"
+-'  86  2  ~/project/code/queue/queue.cpp
+|4,39,86,2,1531985431,"~/project/code/queue/queue.cpp"
+-'  86  2  ~/project/code/queue/queue.cpp
+|4,39,86,2,1531985431,"~/project/code/queue/queue.cpp"
+-'  86  2  ~/project/code/queue/queue.cpp
+|4,39,86,2,1531985431,"~/project/code/queue/queue.cpp"
+-'  86  2  ~/project/code/queue/queue.cpp
+|4,39,86,2,1531985431,"~/project/code/queue/queue.cpp"
+-'  86  2  ~/project/code/queue/queue.cpp
+|4,39,86,2,1531985431,"~/project/code/queue/queue.cpp"
+-'  86  2  ~/project/code/queue/queue.cpp
+|4,39,86,2,1531985431,"~/project/code/queue/queue.cpp"
+-'  86  2  ~/project/code/queue/queue.cpp
+|4,39,86,2,1531985431,"~/project/code/queue/queue.cpp"
+-'  86  2  ~/project/code/queue/queue.cpp
+|4,39,86,2,1531985431,"~/project/code/queue/queue.cpp"
+-'  86  2  ~/project/code/queue/queue.cpp
+|4,39,86,2,1531985431,"~/project/code/queue/queue.cpp"
 
 # History of marks within files (newest to oldest):
 
+> ~/project/code/bst/bst.cpp
+	*	1532408395	0
+	"	5	0
+	^	5	0
+	.	4	1
+	+	4	1
+
+> ~/.vimrc
+	*	1532408307	0
+	"	24	0
+	^	7	19
+	.	7	18
+	+	1	10
+	+	18	12
+	+	14	12
+	+	16	15
+	+	2	0
+	+	3	13
+	+	1	36
+	+	3	14
+	+	1	27
+	+	3	60
+	+	10	37
+	+	13	25
+	+	15	31
+	+	6	0
+	+	6	16
+	+	6	15
+	+	6	33
+	+	6	45
+	+	6	15
+	+	6	0
+	+	6	15
+	+	6	0
+	+	6	14
+	+	24	4
+	+	6	0
+	+	5	8
+	+	8	0
+	+	7	19
+	+	8	0
+	+	7	18
+
+> ~/project/code/queue/queue.cpp
+	*	1532408190	0
+	"	123	0
+	^	73	0
+	.	122	0
+	+	123	0
+	+	98	0
+	+	95	1
+	+	11	20
+	+	6	8
+	+	11	19
+	+	23	1
+	+	22	0
+	+	49	0
+	+	47	0
+	+	41	28
+	+	46	19
+	+	76	0
+	+	69	0
+	+	52	3
+	+	74	16
+	+	75	2
+	+	56	1
+	+	52	23
+	+	65	21
+	+	66	40
+	+	68	0
+	+	69	0
+	+	70	0
+	+	53	5
+	+	55	0
+	+	99	10
+	+	96	0
+	+	94	0
+	+	92	0
+	+	101	10
+	+	121	0
+	+	103	0
+	+	103	12
+	+	103	39
+	+	3	0
+	+	2	15
+	+	88	0
+	+	86	0
+	+	91	15
+	+	103	14
+	+	103	13
+	+	104	0
+	+	105	0
+	+	106	0
+	+	107	0
+	+	103	12
+	+	104	12
+	+	105	12
+	+	106	12
+	+	107	15
+	+	109	13
+	+	110	14
+	+	110	15
+	+	112	13
+	+	109	10
+	+	113	0
+	+	115	0
+	+	117	0
+	+	119	0
+	+	3	19
+	+	108	27
+	+	111	27
+	+	113	26
+	+	111	27
+	+	108	28
+	+	115	26
+	+	117	26
+	+	119	26
+	+	121	0
+	+	122	0
+
+> ~/project/code/stack/stack.cpp
+	*	1531964169	0
+	"	77	2
+	^	77	3
+	.	77	0
+	+	20	2
+	+	20	35
+	+	20	0
+	+	21	0
+	+	50	4
+	+	50	16
+	+	56	0
+	+	56	14
+	+	56	0
+	+	93	13
+	+	112	0
+	+	93	0
+	+	93	4
+	+	93	0
+	+	93	2
+	+	93	0
+	+	93	5
+	+	89	5
+	+	93	39
+	+	93	13
+	+	93	4
+	+	93	2
+	+	93	7
+	+	93	0
+	+	93	14
+	+	2	18
+	+	50	9
+	+	89	23
+	+	93	22
+	+	99	0
+	+	99	13
+	+	99	2
+	+	99	17
+	+	99	29
+	+	99	0
+	+	99	12
+	+	99	0
+	+	93	0
+	+	99	0
+	+	56	21
+	+	50	17
+	+	50	19
+	+	18	12
+	+	32	0
+	+	24	10
+	+	30	0
+	+	26	29
+	+	17	10
+	+	26	13
+	+	50	0
+	+	26	14
+	+	30	0
+	+	18	7
+	+	26	14
+	+	30	0
+	+	18	0
+	+	35	4
+	+	56	0
+	+	33	0
+	+	28	22
+	+	19	19
+	+	28	22
+	+	30	0
+	+	16	10
+	+	29	25
+	+	50	0
+	+	84	0
+	+	37	26
+	+	45	0
+	+	42	0
+	+	41	34
+	+	48	4
+	+	44	26
+	+	49	19
+	+	55	0
+	+	42	7
+	+	43	17
+	+	52	5
+	+	55	16
+	+	55	0
+	+	55	5
+	+	56	19
+	+	57	19
+	+	61	0
+	+	69	27
+	+	70	18
+	+	71	16
+	+	58	15
+	+	98	2
+	+	94	0
+	+	98	3
+	+	96	38
+	+	97	11
+	+	89	23
+	+	94	23
+	+	89	23
+	+	94	23
+	+	80	0
+	+	74	10
+	+	77	0
+
+> ~/project/code/linklist/linkList.cpp
+	*	1529985029	0
+	"	145	0
+
+> ~/misc/Data_Struct/BST.cpp
+	*	1529974410	0
+	"	1	0
+
+> ~/C_1/oneAway.cpp
+	*	1529974318	0
+	"	54	2
+
+> ~/C_2/linkList.cpp
+	*	1529974114	0
+	"	497	0
+	^	497	0
+	.	505	0
+	+	416	13
+	+	441	13
+	+	505	0
+
+> ~/project/code/arrays/arrangeEleIndex.cpp
+	*	1525511834	0
+	"	21	2
+	^	21	27
+	.	21	26
+	+	17	0
+	+	15	19
+	+	17	0
+	+	1	0
+	+	28	0
+	+	25	27
+	+	26	0
+	+	4	12
+	+	1	18
+	+	21	28
+	+	22	17
+	+	24	0
+	+	23	22
+	+	21	26
+
+> ~/project/code/arrays/reverse.cpp
+	*	1525509522	0
+	"	31	21
+	^	31	22
+	.	31	21
+	+	37	1
+	+	1	0
+	+	24	0
+	+	22	0
+	+	21	0
+	+	19	11
+	+	22	0
+	+	35	0
+	+	34	0
+	+	36	0
+	+	5	0
+	+	1	0
+	+	3	0
+	+	30	17
+	+	14	15
+	+	28	30
+	+	31	21
+	+	30	17
+	+	14	34
+	+	16	0
+	+	19	21
+	+	12	16
+	+	10	17
+	+	14	0
+	+	12	15
+	+	14	65
+	+	16	71
+	+	10	14
+	+	30	0
+	+	28	28
+	+	16	47
+	+	10	17
+	+	30	0
+	+	14	0
+	+	16	0
+	+	28	26
+	+	30	17
+	+	31	21
+
 > ~/project/code/arrays/allPairInt.cpp
-	*	1525333625	0
-	"	60	13
+	*	1525508124	0
+	"	41	8
 	^	54	22
 	.	54	21
 	+	23	0
@@ -400,6 +723,140 @@
 	+	60	45
 	+	53	21
 	+	54	21
+
+> ~./vimrc
+	*	1525507889	0
+	"	1	0
+
+> ~/project/code/arrays/generateAllSubArray.cpp
+	*	1525391513	0
+	"	1	18
+	^	17	18
+	.	17	17
+	+	30	0
+	+	29	0
+	+	3	0
+	+	1	18
+	+	5	0
+	+	4	19
+	+	22	0
+	+	7	41
+	+	20	1
+	+	19	5
+	+	29	10
+	+	19	0
+	+	18	33
+	+	18	0
+	+	18	5
+	+	18	20
+	+	11	17
+	+	18	23
+	+	18	22
+	+	11	28
+	+	19	16
+	+	18	20
+	+	11	17
+	+	18	24
+	+	29	0
+	+	28	23
+	+	11	0
+	+	18	20
+	+	18	19
+	+	11	28
+	+	18	22
+	+	18	32
+	+	19	0
+	+	19	4
+	+	11	17
+	+	16	0
+	+	16	35
+	+	16	0
+	+	18	0
+	+	16	5
+	+	16	35
+	+	16	0
+	+	11	17
+	+	16	0
+	+	11	17
+	+	11	28
+	+	13	19
+	+	15	24
+	+	13	27
+	+	17	18
+	+	11	28
+	+	28	21
+	+	17	7
+	+	19	0
+	+	17	6
+	+	13	25
+	+	28	21
+	+	11	28
+	+	11	17
+	+	11	0
+	+	20	0
+	+	17	17
+	+	15	31
+	+	17	17
+
+> ~/project/code/arrays/rotateArray.cpp
+	*	1525387298	0
+	"	1	5
+	^	13	20
+	.	13	19
+	+	39	0
+	+	38	10
+	+	4	0
+	+	1	18
+	+	3	19
+	+	21	0
+	+	19	0
+	+	7	30
+	+	17	0
+	+	11	0
+	+	7	2
+	+	5	20
+	+	7	14
+	+	19	0
+	+	11	7
+	+	7	0
+	+	11	16
+	+	17	0
+	+	11	23
+	+	11	0
+	+	9	26
+	+	11	0
+	+	8	0
+	+	7	9
+	+	11	0
+	+	9	22
+	+	11	37
+	+	16	0
+	+	14	28
+	+	11	17
+	+	15	21
+	+	30	23
+	+	5	21
+	+	7	0
+	+	5	26
+	+	25	30
+	+	29	0
+	+	28	26
+	+	37	0
+	+	32	2
+	+	33	25
+	+	35	16
+	+	11	17
+	+	17	15
+	+	11	17
+	+	17	0
+	+	15	15
+	+	13	6
+	+	11	0
+	+	13	19
+
+> ~/project/code/arrays/rotateArray.cppvim
+	*	1525386778	0
+	"	1	0
 
 > ~/project/code/arrays/findMissingNum.cpp
 	*	1525328858	0
@@ -621,180 +1078,3 @@
 	+	5	0
 	+	4	19
 	+	12	40
-
-> ~/project/questions/reverseString.cpp
-	*	1524702944	0
-	"	20	2
-	^	20	3
-	.	23	18
-	+	32	23
-	+	32	22
-	+	32	21
-	+	32	12
-	+	32	21
-	+	32	11
-	+	41	1
-	+	33	1
-	+	41	2
-	+	41	0
-	+	41	5
-	+	41	0
-	+	33	5
-	+	33	1
-	+	33	4
-	+	33	1
-	+	41	0
-	+	11	0
-	+	31	0
-	+	40	0
-	+	34	2
-	+	29	0
-	+	16	3
-	+	11	18
-	+	16	50
-	+	27	1
-	+	27	0
-	+	18	44
-	+	25	0
-	+	24	0
-	+	23	28
-	+	23	19
-	+	21	16
-	+	23	31
-	+	26	2
-	+	13	19
-	+	26	26
-	+	34	23
-	+	37	25
-	+	30	0
-	+	33	0
-	+	48	0
-	+	31	0
-	+	15	0
-	+	31	0
-	+	39	10
-	+	10	15
-	+	19	0
-	+	18	8
-	+	19	6
-	+	18	27
-	+	19	15
-	+	21	20
-	+	22	27
-	+	14	0
-	+	15	0
-	+	16	0
-	+	32	0
-	+	16	27
-	+	22	47
-	+	11	6
-	+	10	7
-	+	11	8
-	+	21	11
-	+	16	27
-	+	22	17
-	+	21	19
-	+	19	15
-	+	22	45
-	+	23	0
-	+	22	8
-	+	22	5
-	+	26	10
-	+	23	18
-
-> ~/.vimrc
-	*	1524699843	0
-	"	5	8
-	^	5	9
-	.	5	8
-	+	1	10
-	+	16	12
-	+	12	12
-	+	14	15
-	+	2	0
-	+	3	13
-	+	1	36
-	+	3	14
-	+	1	27
-	+	3	60
-	+	8	37
-	+	11	25
-	+	13	31
-	+	6	0
-	+	6	16
-	+	6	15
-	+	6	33
-	+	6	45
-	+	6	15
-	+	6	0
-	+	6	15
-	+	6	0
-	+	6	14
-	+	22	4
-	+	6	0
-	+	5	8
-
-> ~/.inputrc
-	*	1524619010	0
-	"	75	0
-	^	75	0
-	.	75	0
-	+	76	18
-	+	75	0
-
-> /usr/share/vim/vim80/vimrc_example.vim
-	*	1524618915	0
-	"	4	0
-	^	4	5
-	.	4	4
-	+	1	25
-	+	1	12
-	+	1	15
-	+	1	12
-	+	1	0
-	+	1	20
-	+	4	4
-
-> ~/.gvimrc
-	*	1524618676	0
-	"	1	14
-	^	1	15
-	.	1	14
-	+	1	14
-
-> ~/.virmc
-	*	1524617349	0
-	"	1	0
-
-> /.vimrc
-	*	1524617313	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/hello
-	*	1524617266	0
-	"	1	0
-
-> /usr/vimrc_example.vim
-	*	1524616424	0
-	"	12	0
-	^	8	13
-	.	1	0
-	+	12	0
-	+	9	0
-	+	8	12
-	+	14	0
-	+	1	0
-
-> ~/vimrc
-	*	1524615719	0
-	"	1	0
-
-> ~/project/questions/vimrc
-	*	1524615660	0
-	"	1	0
-
-> ~/hello.cpp
-	*	1524601739	0
-	"	1	0

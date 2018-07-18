@@ -413,7 +413,7 @@ public:
 
 
   /**
-   *
+   *  TO DO:::
    *
    *
    *
@@ -501,7 +501,6 @@ int main()
   list.insert(1);
 
   list.partitionX(5);
-
 
   return 0;
 }
