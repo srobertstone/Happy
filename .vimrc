@@ -4,6 +4,8 @@ set autoindent             "" Makes the next line on same tab
 
 syntax on
 
+colorscheme evening 
+
 
 "" Changes tab to be equal to 2 spaces
 
